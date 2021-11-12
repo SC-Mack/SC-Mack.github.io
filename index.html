@@ -12,40 +12,739 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Nanum+Brush+Script&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&family=Source+Sans+Pro&display=swap"
       rel="stylesheet"
     />
     <title>Development Ninja</title>
     <style>
       body {
-        background-image: url("images/ninja-bg.jpg");
-        font-family: "Caveat Brush", cursive;
+        font-family: "Source Sans Pro", sans-serif;
+      }
+      .title {
+        font-family: "Nanum Brush Script", cursive;
       }
     </style>
   </head>
 
   <body class="bg-fixed bg-no-repeat bg-cover">
-    <div class="grid grid-cols-8 gap-0">
+    <div
+      class="
+        flex flex-col
+        mx-auto
+        -mt-20
+        overflow-hidden
+        bg-gradient-to-r
+        from-blue-900
+        to-blue-900
+      "
+    >
       <div
-        class="col-span-4 h-screen flex items-center justify-end"
-        style="background-color: #3e747f"
+        class="
+          relative
+          z-20
+          flex
+          w-full
+          min-h-screen
+          px-5
+          pt-20
+          mx-auto
+          sm:px-12 sm:h-screen
+          max-w-7xl
+          sm:pt-0
+          lg:px-0
+        "
       >
-        <div class="grid grid-rows-2 gap-0 h-60">
+        <div class="w-full md:w-2/3">
           <div
-            class="text-9xl font-extrabold items-end pr-60"
-            style="font-family: 'Nanum Brush Script', cursive"
+            class="flex flex-col items-start justify-center w-full h-full pb-20"
           >
-            Dev
-          </div>
-          <div
-            class="text-9xl font-extrabold border-2"
-            style="font-family: 'Nanum Brush Script', cursive"
-          >
-            Ninja
+            <div class="relative w-full lg:pl-10">
+              <div>
+                <img
+                  src="images/profile-pic.jpg"
+                  alt="Profile Picture"
+                  class="
+                    flex
+                    items-center
+                    justify-center
+                    rounded-lg
+                    w-36
+                    h-36
+                    sm:rounded-xl
+                  "
+                />
+              </div>
+              <h1
+                class="
+                  relative
+                  z-0
+                  w-full
+                  max-w-md
+                  py-2
+                  text-4xl
+                  font-black
+                  text-left text-white
+                  sm:py-5 sm:text-6xl
+                  title
+                "
+              >
+                Dev Ninja
+              </h1>
+            </div>
+
+            <div class="flex flex-col items-start my-4 text-left lg:pl-10">
+              <p
+                class="
+                  max-w-md
+                  mb-10
+                  text-base
+                  font-light
+                  text-gray-200
+                  sm:text-lg
+                  lg:text-xl
+                  dark:text-dark-200
+                "
+              >
+                My name is Scott Cormack. An aspiring developer, retired
+                infantryman, lifelong learner and a fan of injecting humor into
+                most things.
+              </p>
+              <p
+                class="
+                  max-w-md
+                  mb-10
+                  text-base
+                  font-light
+                  text-gray-200
+                  sm:text-lg
+                  lg:text-xl
+                  dark:text-dark-200
+                "
+              >
+                I started my new career journey on 1 April, 2021. After spending
+                years helping to pave the way for others to upskill in cloud and
+                development environments, I decided to take the plunge and go
+                after it myself. Since then I have earned multiple cloud
+                certifications as well as learned full stack development tools
+                to include:
+            <ul class="
+            max-w-md
+            mb-10
+            ml-10
+            text-base
+            font-light
+            text-gray-200
+            sm:text-lg
+            lg:text-xl
+            dark:text-dark-200">
+                <li>Python</li>
+                <li>JavaScript</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Flask</li>
+                <li>Django</li>
+                <li>Vue.js</li>
+                <li class="italic">Whatever your team needs here</li>
+            </ul>  
+            </p>
+
+              <div
+                class="
+                  relative
+                  flex flex-col
+                  items-center
+                  justify-start
+                  w-full
+                  space-y-5
+                  sm:w-auto
+                  lg:space-y-0 lg:space-x-5 lg:flex-row
+                "
+              >
+                <a
+                  href="https://www.credly.com/users/scott-cormack/badges"
+                  class="
+                    flex
+                    items-center
+                    justify-center
+                    w-full
+                    px-8
+                    py-3
+                    text-base
+                    font-medium
+                    leading-6
+                    text-white text-blue-600
+                    transition
+                    duration-150
+                    ease-in-out
+                    border border-transparent
+                    rounded-lg
+                    sm:w-auto sm:rounded-full
+                    bg-blue-50
+                    xl:px-10
+                    hover:bg-white
+                    focus:outline-none
+                    focus:border-blue-700
+                    focus:shadow-outline-blue
+                    md:py-4
+                    xl:text-xl
+                  "
+                >
+                  Credly Profile
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/scottcormack/"
+                  class="
+                    flex
+                    items-center
+                    justify-center
+                    w-full
+                    px-8
+                    py-3
+                    text-base
+                    font-medium
+                    leading-6
+                    text-white text-blue-600
+                    transition
+                    duration-150
+                    ease-in-out
+                    border border-transparent
+                    rounded-lg
+                    sm:w-auto sm:rounded-full
+                    bg-blue-50
+                    xl:px-10
+                    hover:bg-white
+                    focus:outline-none
+                    focus:border-blue-700
+                    focus:shadow-outline-blue
+                    md:py-4
+                    xl:text-xl
+                  "
+                  data-unsp-sanitized="clean"
+                >
+                  LinkedIn
+                </a>
+                <a
+                  href="https://gamer-lfg.herokuapp.com/"
+                  class="
+                    flex
+                    items-center
+                    justify-center
+                    w-full
+                    px-8
+                    py-3
+                    text-base
+                    font-medium
+                    leading-6
+                    text-white text-blue-600
+                    transition
+                    duration-150
+                    ease-in-out
+                    border border-transparent
+                    rounded-lg
+                    sm:w-auto sm:rounded-full
+                    bg-blue-50
+                    xl:px-10
+                    hover:bg-white
+                    focus:outline-none
+                    focus:border-blue-700
+                    focus:shadow-outline-blue
+                    md:py-4
+                    xl:text-xl
+                  "
+                >
+                  Ongoing Project
+                </a>
+              </div>
+            </div>
           </div>
         </div>
+
+        <div class="relative w-0 md:w-1/2"></div>
       </div>
-      <div class="text-8xl col-span-4 h-screen flex items-end">Test</div>
+      <div
+        class="
+          absolute
+          top-0
+          left-0
+          z-0
+          flex
+          items-start
+          justify-center
+          w-full
+          h-screen
+          overflow-hidden
+          opacity-75
+        "
+      >
+        <div class="relative z-20 w-1/2">
+          <div
+            class="
+              absolute
+              top-0
+              left-0
+              w-full
+              h-screen
+              bg-gradient-to-r
+              from-blue-900
+              to-blue-900
+            "
+          ></div>
+        </div>
+        <div class="relative z-10 w-1/2">
+          <div class="absolute top-0 right-0 hidden w-full h-full sm:block">
+            <div
+              class="
+                flex
+                items-center
+                justify-center
+                w-screen
+                h-screen
+                transform
+                scale-75
+                -rotate-12
+                -translate-x-80
+                sm:-translate-x-64 sm:scale-125
+                md:scale-125
+                min-w-persp
+                md:-translate-x-24
+              "
+            >
+              <div
+                class="
+                  flex flex-col flex-wrap
+                  items-start
+                  justify-start
+                  w-full
+                  h-screen
+                  mx-auto
+                  space-x-3 space-y-3
+                  transformPerspective
+                "
+              >
+                <div
+                  class="
+                    h-auto
+                    bg-gray-200 bg-cover
+                    rounded-lg
+                    overflow-hidden
+                    bg-top-center
+                    w-auto
+                    max-w-sm
+                    mt-3
+                    ml-3
+                  "
+                >
+                  <img
+                    src="images/ninja-bg.jpg"
+                    class="object-cover w-full h-auto"
+                  />
+                </div>
+                <div
+                  class="
+                    h-auto
+                    bg-gray-200 bg-cover
+                    rounded-lg
+                    overflow-hidden
+                    bg-top-center
+                    w-auto
+                    max-w-sm
+                  "
+                >
+                  <img
+                    src="images/ninja-bg.jpg"
+                    class="object-cover w-full h-auto"
+                  />
+                </div>
+                <div
+                  class="
+                    h-auto
+                    bg-gray-200 bg-cover
+                    rounded-lg
+                    overflow-hidden
+                    bg-top-center
+                    w-auto
+                    max-w-sm
+                  "
+                >
+                  <img
+                    src="images/ninja-bg.jpg"
+                    class="object-cover w-full h-auto"
+                  />
+                </div>
+                <div
+                  class="
+                    h-auto
+                    bg-gray-200 bg-cover
+                    rounded-lg
+                    overflow-hidden
+                    bg-top-center
+                    w-auto
+                    max-w-sm
+                  "
+                >
+                  <img
+                    src="images/ninja-bg.jpg"
+                    class="object-cover w-full h-auto"
+                  />
+                </div>
+                <div
+                  class="
+                    h-auto
+                    bg-gray-200 bg-cover
+                    rounded-lg
+                    overflow-hidden
+                    bg-top-center
+                    w-auto
+                    max-w-sm
+                  "
+                >
+                  <img
+                    src="images/ninja-bg.jpg"
+                    class="object-cover w-full h-auto"
+                  />
+                </div>
+                <div
+                  class="
+                    h-auto
+                    bg-gray-200 bg-cover
+                    rounded-lg
+                    overflow-hidden
+                    bg-top-center
+                    w-auto
+                    max-w-sm
+                  "
+                >
+                  <img
+                    src="images/ninja-bg.jpg"
+                    class="object-cover w-full h-auto"
+                  />
+                </div>
+                <div
+                  class="
+                    h-auto
+                    bg-gray-200 bg-cover
+                    rounded-lg
+                    overflow-hidden
+                    bg-top-center
+                    w-auto
+                    max-w-sm
+                  "
+                >
+                  <img
+                    src="images/ninja-bg.jpg"
+                    class="object-cover w-full h-auto"
+                  />
+                </div>
+                <div
+                  class="
+                    h-auto
+                    bg-gray-200 bg-cover
+                    rounded-lg
+                    overflow-hidden
+                    bg-top-center
+                    w-auto
+                    max-w-sm
+                  "
+                >
+                  <img
+                    src="images/ninja-bg.jpg"
+                    class="object-cover w-full h-auto"
+                  />
+                </div>
+                <div
+                  class="
+                    h-auto
+                    bg-gray-200 bg-cover
+                    rounded-lg
+                    overflow-hidden
+                    bg-top-center
+                    w-auto
+                    max-w-sm
+                  "
+                >
+                  <img
+                    src="images/ninja-bg.jpg"
+                    class="object-cover w-full h-auto"
+                  />
+                </div>
+                <div
+                  class="
+                    h-auto
+                    bg-gray-200 bg-cover
+                    rounded-lg
+                    overflow-hidden
+                    bg-top-center
+                    w-auto
+                    max-w-sm
+                  "
+                >
+                  <img
+                    src="images/ninja-bg.jpg"
+                    class="object-cover w-full h-auto"
+                  />
+                </div>
+                <div
+                  class="
+                    h-auto
+                    bg-gray-200 bg-cover
+                    rounded-lg
+                    overflow-hidden
+                    bg-top-center
+                    w-auto
+                    max-w-sm
+                  "
+                >
+                  <img
+                    src="images/ninja-bg.jpg"
+                    class="object-cover w-full h-auto"
+                  />
+                </div>
+                <div
+                  class="
+                    h-auto
+                    bg-gray-200 bg-cover
+                    rounded-lg
+                    overflow-hidden
+                    bg-top-center
+                    w-auto
+                    max-w-sm
+                  "
+                >
+                  <img
+                    src="images/ninja-bg.jpg"
+                    class="object-cover w-full h-auto"
+                  />
+                </div>
+                <div
+                  class="
+                    h-auto
+                    bg-gray-200 bg-cover
+                    rounded-lg
+                    overflow-hidden
+                    bg-top-center
+                    w-auto
+                    max-w-sm
+                  "
+                >
+                  <img
+                    src="images/ninja-bg.jpg"
+                    class="object-cover w-full h-auto"
+                  />
+                </div>
+                <div
+                  class="
+                    h-auto
+                    bg-gray-200 bg-cover
+                    rounded-lg
+                    overflow-hidden
+                    bg-top-center
+                    w-auto
+                    max-w-sm
+                  "
+                >
+                  <img
+                    src="images/ninja-bg.jpg"
+                    class="object-cover w-full h-auto"
+                  />
+                </div>
+                <div
+                  class="
+                    h-auto
+                    bg-gray-200 bg-cover
+                    rounded-lg
+                    overflow-hidden
+                    bg-top-center
+                    w-auto
+                    max-w-sm
+                  "
+                >
+                  <img
+                    src="images/ninja-bg.jpg"
+                    class="object-cover w-full h-auto"
+                  />
+                </div>
+                <div
+                  class="
+                    h-auto
+                    bg-gray-200 bg-cover
+                    rounded-lg
+                    overflow-hidden
+                    bg-top-center
+                    w-auto
+                    max-w-sm
+                  "
+                >
+                  <img
+                    src="images/ninja-bg.jpg"
+                    class="object-cover w-full h-auto"
+                  />
+                </div>
+                <div
+                  class="
+                    h-auto
+                    bg-gray-200 bg-cover
+                    rounded-lg
+                    overflow-hidden
+                    bg-top-center
+                    w-auto
+                    max-w-sm
+                  "
+                >
+                  <img
+                    src="images/ninja-bg.jpg"
+                    class="object-cover w-full h-auto"
+                  />
+                </div>
+                <div
+                  class="
+                    h-auto
+                    bg-gray-200 bg-cover
+                    rounded-lg
+                    overflow-hidden
+                    bg-top-center
+                    w-auto
+                    max-w-sm
+                  "
+                >
+                  <img
+                    src="images/ninja-bg.jpg"
+                    class="object-cover w-full h-auto"
+                  />
+                </div>
+                <div
+                  class="
+                    h-auto
+                    bg-gray-200 bg-cover
+                    rounded-lg
+                    overflow-hidden
+                    bg-top-center
+                    w-auto
+                    max-w-sm
+                  "
+                >
+                  <img
+                    src="images/ninja-bg.jpg"
+                    class="object-cover w-full h-auto"
+                  />
+                </div>
+                <div
+                  class="
+                    h-auto
+                    bg-gray-200 bg-cover
+                    rounded-lg
+                    overflow-hidden
+                    bg-top-center
+                    w-auto
+                    max-w-sm
+                  "
+                >
+                  <img
+                    src="images/ninja-bg.jpg"
+                    class="object-cover w-full h-auto"
+                  />
+                </div>
+                <div
+                  class="
+                    h-auto
+                    bg-gray-200 bg-cover
+                    rounded-lg
+                    overflow-hidden
+                    bg-top-center
+                    w-auto
+                    max-w-sm
+                  "
+                >
+                  <img
+                    src="images/ninja-bg.jpg"
+                    class="object-cover w-full h-auto"
+                  />
+                </div>
+                <div
+                  class="
+                    h-auto
+                    bg-gray-200 bg-cover
+                    rounded-lg
+                    overflow-hidden
+                    bg-top-center
+                    w-auto
+                    max-w-sm
+                  "
+                >
+                  <img
+                    src="images/ninja-bg.jpg"
+                    class="object-cover w-full h-auto"
+                  />
+                </div>
+                <div
+                  class="
+                    h-auto
+                    bg-gray-200 bg-cover
+                    rounded-lg
+                    overflow-hidden
+                    bg-top-center
+                    w-auto
+                    max-w-sm
+                  "
+                >
+                  <img
+                    src="images/ninja-bg.jpg"
+                    class="object-cover w-full h-auto"
+                  />
+                </div>
+                <div
+                  class="
+                    h-auto
+                    bg-gray-200 bg-cover
+                    rounded-lg
+                    overflow-hidden
+                    bg-top-center
+                    w-auto
+                    max-w-sm
+                  "
+                >
+                  <img
+                    src="images/ninja-bg.jpg"
+                    class="object-cover w-full h-auto"
+                  />
+                </div>
+                <div
+                  class="
+                    h-auto
+                    bg-gray-200 bg-cover
+                    rounded-lg
+                    overflow-hidden
+                    bg-top-center
+                    w-auto
+                    max-w-sm
+                  "
+                >
+                  <img
+                    src="images/ninja-bg.jpg"
+                    class="object-cover w-full h-auto"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="
+              absolute
+              top-0
+              left-0
+              z-50
+              w-full
+              h-screen
+              bg-gradient-to-r
+              from-blue-900
+              t
+              to-transparent
+            "
+          ></div>
+        </div>
+      </div>
     </div>
+    <footer>
+
+    </footer>
   </body>
 </html>
